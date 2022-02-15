@@ -104,3 +104,17 @@ const uniqueItem = (arr1, arr2) => {
 
 console.log(uniqueItem([1, 2, 5, 4], [1,2]));
 // ==================================================================
+
+// ============== 5. Remove duplicates ==============================
+arr1 = [1, 3, 7, 4]
+arr2 = [1, 5, 3, 7, 0]
+arr3 = arr1.concat(arr2)
+
+const removeDuplicates = (value, idx, arr) => {
+    return arr.indexOf(value) == idx
+}
+
+const remove = arr3.filter(removeDuplicates)
+
+console.log(remove)
+// ==================================================================
