@@ -43,3 +43,24 @@ const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("")
 // arr1 = [1, 3, 7, 4]
 // arr2 = [1, 5, 3, 7, 0]
 // Output: [1, 3, 4, 5, 7, 0]
+
+// ======================= 1. remove vowels ===================================
+
+
+const stringToCheck = "Mebi oso na hit choda op nodotaim"
+
+const vowels = ['a', 'e', 'i', 'o','u']
+
+let newString = ''
+
+for (const char of stringToCheck) {
+   if(vowels.indexOf(char) === -1) {
+       newString += char
+   }
+}
+
+console.log(newString)
+
+// ==========================================================================
+
+// ===================3.
