@@ -2,7 +2,7 @@
 // Input: "javascript"
 // Output: "jvscrpt"
 
-const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("")
+const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("");
 
 // 2. Alphabet value
 // Hitung jumlah value suatu string dimana setiap huruf memiliki value
@@ -46,21 +46,30 @@ const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("")
 
 // ======================= 1. remove vowels ===================================
 
+const stringToCheck = "Mebi oso na hit choda op nodotaim";
 
-const stringToCheck = "Mebi oso na hit choda op nodotaim"
+const vowels = ["a", "e", "i", "o", "u"];
 
-const vowels = ['a', 'e', 'i', 'o','u']
-
-let newString = ''
+let newString = "";
 
 for (const char of stringToCheck) {
-   if(vowels.indexOf(char) === -1) {
-       newString += char
-   }
+  if (vowels.indexOf(char) === -1) {
+    newString += char;
+  }
 }
 
-console.log(newString)
+console.log(newString);
 
 // ==========================================================================
 
-// ===================3.
+// ==============3. Alphabet value ==========================================
+const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("");
+const alphabetValue = (string) => {
+  let result = 0;
+  for (let i = 0; i < string.split("").length; i++) {
+    result += alphabetArr.indexOf(string[i]) + 1;
+  }
+  return result;
+};
+console.log(alphabetValue("abcdefghijklmnipqrstuvwxyz"));
+// ============================================================================
