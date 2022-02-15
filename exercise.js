@@ -73,3 +73,15 @@ const alphabetValue = (string) => {
 };
 console.log(alphabetValue("abcdefghijklmnipqrstuvwxyz"));
 // ============================================================================
+
+// =======================4. Odd Alphabet Value ===============================
+const oddAlphabetValue = (string) => {
+  let result = 0;
+  for (let i = 0; i < string.split("").length; i++) {
+    if (!((alphabetArr.indexOf(string[i]) + 1) % 2 == 0))
+      result += alphabetArr.indexOf(string[i]) + 1;
+  }
+  return result;
+};
+console.log(oddAlphabetValue("yu gonplei ste udon"));
+// ===============================================================================
