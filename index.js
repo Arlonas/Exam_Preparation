@@ -78,14 +78,3 @@ console.log(letters[2])
 // output: "hll"
 // gunakan method split
 
-const removeVowels = (arr = []) => {
-  let result = ""
-    
-      arr.forEach((val) => {
-        if(val == arr[1] && val == arr[4] ) {
-          result = "hll"
-        }
-      })
-      return result
-}
-console.log(removeVowels("hello"))
