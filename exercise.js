@@ -62,7 +62,7 @@ console.log(newString);
 
 // ==========================================================================
 
-// ==============3. Alphabet value ==========================================
+// ==============2. Alphabet value ==========================================
 const alphabetArr = "abcdefghijklnopqrstuvwxyz".split("");
 const alphabetValue = (string) => {
   let result = 0;
@@ -74,7 +74,7 @@ const alphabetValue = (string) => {
 console.log(alphabetValue("abcdefghijklmnipqrstuvwxyz"));
 // ============================================================================
 
-// =======================4. Odd Alphabet Value ===============================
+// =======================3. Odd Alphabet Value ===============================
 const oddAlphabetValue = (string) => {
   let result = 0;
   for (let i = 0; i < string.split("").length; i++) {
@@ -85,3 +85,22 @@ const oddAlphabetValue = (string) => {
 };
 console.log(oddAlphabetValue("yu gonplei ste udon"));
 // ===============================================================================
+
+// ==================== 4. unique items =======================================
+const uniqueItem = (arr1, arr2) => {
+    let result = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr2.indexOf(arr1[i]) === -1) {
+            result.push(arr1[i]);
+        }
+    }
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) === -1) {
+            result.push(arr2[i]);
+        }
+    }
+    return result;
+}
+
+console.log(uniqueItem([1, 2, 5, 4], [1,2]));
+// ==================================================================
